@@ -19,7 +19,7 @@ begin
 end Structural;
 
 architecture Behavioral of AsyncRegister is
-signal reg : STD_LOGIC_VECTOR (N-1 downto 0);
+signal reg : STD_LOGIC_VECTOR (N-1 downto 0) := (others => '0');
 begin
    Main : process ( Din, EN )
    begin
