@@ -14,7 +14,7 @@ ARCHITECTURE behavior OF SREGnTests IS
          SE : IN  std_logic;
          CLK : IN  std_logic;
          RST : IN  std_logic;
-         Pout : OUT  std_logic_vector(N-1 downto 0)
+         Pout : OUT  std_logic_vector(0 to N-1)
         );
     END COMPONENT;
     
@@ -25,7 +25,7 @@ ARCHITECTURE behavior OF SREGnTests IS
    signal RST : std_logic := '0';
 
  	--Outputs
-   signal Pout_s, Pout_b : std_logic_vector(N-1 downto 0);
+   signal Pout_s, Pout_b : std_logic_vector(0 to N-1);
    signal error : std_logic;
 
    -- Clock period definitions
@@ -33,7 +33,7 @@ ARCHITECTURE behavior OF SREGnTests IS
    constant SE_multiplier : integer := 2 ** 0;
    constant Sin_multiplier : integer := SE_multiplier;
    
-   constant Sin_sequence : std_logic_vector(N-1 downto 0) := "00000001";
+   constant Sin_sequence : std_logic_vector(0 to N-1) := "10000000";
 BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    SREGn_s: entity work.SREGn(Structural) PORT MAP (
