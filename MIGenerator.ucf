@@ -1,0 +1,22 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Pout[0]" LOC = N1;
+NET "Pout[1]" LOC = L5;
+NET "Pout[2]" LOC = L4;
+NET "Pout[3]" LOC = K3;
+NET "Pout[4]" LOC = M2;
+NET "Pout[5]" LOC = L6;
+NET "Pout[6]" LOC = M4;
+NET "RST" LOC = T16;
+
+# PlanAhead Generated IO constraints 
+
+NET "Pout[0]" IOSTANDARD = LVCMOS18;
+NET "Pout[1]" IOSTANDARD = LVCMOS18;
+NET "Pout[2]" IOSTANDARD = LVCMOS18;
+NET "Pout[3]" IOSTANDARD = LVCMOS18;
+NET "Pout[4]" IOSTANDARD = LVCMOS18;
+NET "Pout[5]" IOSTANDARD = LVCMOS18;
+NET "Pout[6]" IOSTANDARD = LVCMOS18;
+NET "RST" IOSTANDARD = LVCMOS18;
